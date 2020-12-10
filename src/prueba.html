@@ -1,0 +1,4167 @@
+<html>
+	<head>
+		<title>Sala de Urgencias</title>
+		 <link rel="shortcut icon" href="computadora1.png">
+		 <link href="Style.css" type="text/css" rel="stylesheet" media="">
+		 <link rel="shortcut icon" href="stethoscope.png">	</head>
+	
+	<body>
+
+		<table class="tabla71">
+			<thead>
+				<tr>
+					<th class='reloj'>Nro Fila</th>
+					<th class='reloj'>Evento</th>
+					<th class='reloj'>Reloj</th>
+					<th>RND Llegada Paciente</th>
+					<th>Tiempo entre Llegadas</th>
+					<th>Proxima Llegada Paciente</th>
+					<th>RND Atencion Enfermero</th>
+					<th>Tiempo de Atencion</th>
+					<th>Fin Atencion Enfermero</th>
+					<th>Tiempo de Atencion</th>
+					<th>Tiempo de Calmante</th>
+					<th>Fin Atencion Medico 1</th>
+					<th>Fin Atencion Medico 2</th>
+					<th class='objetospermanentes'>Enfermero</th>
+					<th class='objetospermanentes'>Cola Enfermero</th>
+					<th class='objetospermanentes'>Estado Medico 1</th>
+					<th class='objetospermanentes'>Tiempo Remanente 1</th>
+					<th class='objetospermanentes'>Estado Medico 2</th>
+					<th class='objetospermanentes'>Tiempo Remanente 2</th>
+					<th class='objetospermanentes'>Cola Urgencia</th>
+					<th class='objetospermanentes'>Cola Comun</th>
+					<th class='reloj'>Cant Pacientes Cola</th>
+					<th class='reloj'>Max Pacientes Cola</th>
+					<th class='reloj'>Tiempo Espera Urgente</th>
+					<th class='reloj'>Tiempo Max Espera Urgente</th>
+					<th class='reloj'>Cant Pacientes Comunes</th>
+					<th class='reloj'>Ac Tiempo Espera</th>
+					<th class='reloj'>Promedio Tiempo Espera</th>
+					<th class='reloj'>Cant Urgencias</th>
+					<th class='reloj'>Cant Total Pacientes</th>
+					<th class='reloj'>Porcentaje Urgencias</th>
+					<th class='reloj'>Ac Ocupacion Enfermero</th>
+					<th class='reloj'>Porcentaje Ocupacion Enfermero</th>
+					<th class='reloj'>Ac Ocupacion Medico 1</th>
+					<th class='reloj'>Porcentaje Ocupacion Medico 1</th>
+					<th class='reloj'>Ac Ocupacion Medico 2</th>
+					<th class='reloj'>Porcentaje Ocupacion Medico 2</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+					<th>Id Paciente</th>
+					<th>Estado</th>
+					<th>Tipo</th>
+					<th>Hora Inicio Espera</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr>
+					<td>0</td>
+					<td>Inicializacion</td>
+					<td>0.0</td>
+					<td>0.71856123</td>
+					<td>6.339202</td>
+					<td class='evento'>6.339202</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>Llegada Paciente</td>
+					<td>6.339202</td>
+					<td>0.47963113</td>
+					<td>3.2660868</td>
+					<td class='evento'>9.6052885</td>
+					<td>0.9523836</td>
+					<td>0.2690482</td>
+					<td class='evento'>6.60825</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>6.60825</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>9.6052885</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>6.5260334</td>
+					<td>0.0</td>
+					<td class='evento'>13.134283</td>
+					<td class='evento'>0.0</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.2690482</td>
+					<td>4.0713987</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Llegada Paciente</td>
+					<td>9.6052885</td>
+					<td>0.28594422</td>
+					<td>1.683971</td>
+					<td class='evento'>11.28926</td>
+					<td>0.10880107</td>
+					<td>0.07502425</td>
+					<td class='evento'>9.680313</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>13.134283</td>
+					<td class='evento'>0.0</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.2690482</td>
+					<td>2.8010423</td>
+					<td>2.9970384</td>
+					<td>31.201962</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>2</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>9.680313</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>11.28926</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>7.6021976</td>
+					<td>0.0</td>
+					<td class='evento'>13.134283</td>
+					<td class='evento'>17.28251</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>2</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.34407282</td>
+					<td>3.5543566</td>
+					<td>3.072063</td>
+					<td>31.73516</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>2</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Llegada Paciente</td>
+					<td>11.28926</td>
+					<td>0.9645072</td>
+					<td>16.692131</td>
+					<td class='evento'>27.981392</td>
+					<td>0.589706</td>
+					<td>0.18563238</td>
+					<td class='evento'>11.474893</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>13.134283</td>
+					<td class='evento'>17.28251</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>2</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.34407282</td>
+					<td>3.0477889</td>
+					<td>4.68101</td>
+					<td>41.464275</td>
+					<td>1.6089468</td>
+					<td>14.252013</td>
+					<td>1</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>2</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>3</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>11.474893</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>27.981392</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>13.134283</td>
+					<td class='evento'>17.28251</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>2</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0.0</td>
+					<td>0.5297055</td>
+					<td>4.6162133</td>
+					<td>4.8666425</td>
+					<td>42.411224</td>
+					<td>1.7945795</td>
+					<td>15.639183</td>
+					<td>1</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>2</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>3</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>11.474893</td>
+
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>13.134283</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>27.981392</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>11.364498</td>
+					<td>0.0</td>
+					<td class='evento'>24.498781</td>
+					<td class='evento'>17.28251</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>3</td>
+					<td>1.6593904</td>
+					<td>0.55313015</td>
+					<td>0</td>
+					<td>1</td>
+					<td>0.0</td>
+					<td>0.5297055</td>
+					<td>4.032999</td>
+					<td>6.526033</td>
+					<td>49.68701</td>
+					<td>3.45397</td>
+					<td>26.297361</td>
+					<td>1</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td>2</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>3</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>8</td>
+					<td>Fin Atencion Medico 2</td>
+					<td>17.28251</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>27.981392</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>24.498781</td>
+					<td class='evento'>0.0</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>3</td>
+					<td>1.6593904</td>
+					<td>0.55313015</td>
+					<td>0</td>
+					<td>2</td>
+					<td>0.0</td>
+					<td>0.5297055</td>
+					<td>3.0649803</td>
+					<td>10.674261</td>
+					<td>61.76337</td>
+					<td>7.6021976</td>
+					<td>43.98781</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>2</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td>3</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>9</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>24.498781</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>27.981392</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>3</td>
+					<td>1.6593904</td>
+					<td>0.55313015</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.5297055</td>
+					<td>2.162171</td>
+					<td>17.890532</td>
+					<td>73.02621</td>
+					<td>7.6021976</td>
+					<td>31.030924</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>3</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>10</td>
+					<td>Llegada Paciente</td>
+					<td>27.981392</td>
+					<td>0.2221224</td>
+					<td>1.2559307</td>
+					<td class='evento'>29.237322</td>
+					<td>0.07690163</td>
+					<td>0.06768738</td>
+					<td class='evento'>28.04908</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>3</td>
+					<td>1.6593904</td>
+					<td>0.55313015</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.5297055</td>
+					<td>1.8930634</td>
+					<td>17.890532</td>
+					<td>63.93725</td>
+					<td>7.6021976</td>
+					<td>27.168762</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>11</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>28.04908</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>29.237322</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>8.430027</td>
+					<td>0.0</td>
+					<td class='evento'>36.479107</td>
+					<td class='evento'>0.0</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.5973935</td>
+					<td>2.1298149</td>
+					<td>17.890532</td>
+					<td>63.782955</td>
+					<td>7.6021976</td>
+					<td>27.103197</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>12</td>
+					<td>Llegada Paciente</td>
+					<td>29.237322</td>
+					<td>0.27734905</td>
+					<td>1.6241448</td>
+					<td class='evento'>30.861467</td>
+					<td>0.30167612</td>
+					<td>0.11938551</td>
+					<td class='evento'>29.356707</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>36.479107</td>
+					<td class='evento'>0.0</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.5973935</td>
+					<td>2.0432565</td>
+					<td>19.078773</td>
+					<td>65.25486</td>
+					<td>7.6021976</td>
+					<td>26.001688</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>13</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>29.356707</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>30.861467</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>4.1942215</td>
+					<td>3.9</td>
+					<td class='evento'>36.479107</td>
+					<td class='evento'>37.450928</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.7167783</td>
+					<td>2.4416168</td>
+					<td>19.198158</td>
+					<td>65.39616</td>
+					<td>7.6021976</td>
+					<td>25.895947</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>14</td>
+					<td>Llegada Paciente</td>
+					<td>30.861467</td>
+					<td>0.04706253</td>
+					<td>0.24102989</td>
+					<td class='evento'>31.102497</td>
+					<td>0.73267937</td>
+					<td>0.21851626</td>
+					<td class='evento'>31.079983</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>36.479107</td>
+					<td class='evento'>37.450928</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.7167783</td>
+					<td>2.322567</td>
+					<td>20.702919</td>
+					<td>67.0834</td>
+					<td>9.106958</td>
+					<td>29.509157</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>15</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>31.079983</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>31.102497</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>11.959665</td>
+					<td>3.9</td>
+					<td class='evento'>46.93965</td>
+					<td class='evento'>37.450928</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.9352937</td>
+					<td>3.0093122</td>
+					<td>20.921434</td>
+					<td>67.31482</td>
+					<td>9.325474</td>
+					<td>30.004757</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>16</td>
+					<td>Llegada Paciente</td>
+					<td>31.102497</td>
+					<td>0.44947267</td>
+					<td>2.9843934</td>
+					<td class='evento'>34.08689</td>
+					<td>0.62062985</td>
+					<td>0.19274487</td>
+					<td class='evento'>31.295242</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.93965</td>
+					<td class='evento'>37.450928</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>0.9352937</td>
+					<td>3.0071337</td>
+					<td>20.943949</td>
+					<td>67.33848</td>
+					<td>9.347988</td>
+					<td>30.055428</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>17</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>31.295242</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>34.08689</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.93965</td>
+					<td class='evento'>37.450928</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>1.1280389</td>
+					<td>3.604506</td>
+					<td>21.136694</td>
+					<td>67.539635</td>
+					<td>9.540733</td>
+					<td>30.486212</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+
+				</tr>
+				<tr>
+					<td>18</td>
+					<td>Llegada Paciente</td>
+					<td>34.08689</td>
+					<td>0.8205264</td>
+					<td>8.588636</td>
+					<td class='evento'>42.67553</td>
+					<td>0.7828869</td>
+					<td>0.23006399</td>
+					<td class='evento'>34.316956</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.93965</td>
+					<td class='evento'>37.450928</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>1.1280389</td>
+					<td>3.3093042</td>
+					<td>23.928343</td>
+					<td>70.198074</td>
+					<td>12.332382</td>
+					<td>36.17925</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+					<td>8</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>19</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>34.316956</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>42.67553</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.93965</td>
+					<td class='evento'>37.450928</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>0</td>
+					<td>3</td>
+					<td>0.0</td>
+					<td>1.3581033</td>
+					<td>3.9575286</td>
+					<td>24.158407</td>
+					<td>70.39787</td>
+					<td>12.562447</td>
+					<td>36.607113</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+					<td>8</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Urgente</td>
+					<td>34.316956</td>
+
+				</tr>
+				<tr>
+					<td>20</td>
+					<td>Fin Atencion Medico 2</td>
+					<td>37.450928</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>42.67553</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>5.3935547</td>
+					<td>3.9</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>42.844482</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>3.1339722</td>
+					<td>3.1339722</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>1</td>
+					<td>4</td>
+					<td>25.0</td>
+					<td>1.3581033</td>
+					<td>3.626354</td>
+					<td>27.29238</td>
+					<td>72.87504</td>
+					<td>15.696419</td>
+					<td>41.911964</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>5</td>
+					<td>Destruido</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+					<td>8</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>21</td>
+					<td>Llegada Paciente</td>
+					<td>42.67553</td>
+					<td>0.50068396</td>
+					<td>3.4725802</td>
+					<td class='evento'>46.14811</td>
+					<td>0.16912048</td>
+					<td>0.08889771</td>
+					<td class='evento'>42.764427</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>42.844482</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>1</td>
+					<td>4</td>
+					<td>25.0</td>
+					<td>1.3581033</td>
+					<td>3.1823933</td>
+					<td>32.516983</td>
+					<td>76.195854</td>
+					<td>20.92102</td>
+					<td>49.023457</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+					<td>8</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>9</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>22</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>42.764427</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.14811</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>42.844482</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>4</td>
+					<td>1.6593904</td>
+					<td>0.4148476</td>
+					<td>1</td>
+					<td>4</td>
+					<td>25.0</td>
+					<td>1.447001</td>
+					<td>3.3836558</td>
+					<td>32.60588</td>
+					<td>76.24534</td>
+					<td>21.009918</td>
+					<td>49.129425</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>31.295242</td>
+					<td>8</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>9</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>42.764427</td>
+
+				</tr>
+				<tr>
+					<td>23</td>
+					<td>Fin Atencion Medico 2</td>
+					<td>42.844482</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>46.14811</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>9.577202</td>
+					<td>0.0</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>52.421684</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>5</td>
+					<td>13.208631</td>
+					<td>2.641726</td>
+					<td>2</td>
+					<td>5</td>
+					<td>40.0</td>
+					<td>1.447001</td>
+					<td>3.3773332</td>
+					<td>32.685936</td>
+					<td>76.28972</td>
+					<td>21.089973</td>
+					<td>49.22448</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>8</td>
+					<td>Destruido</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>9</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>42.764427</td>
+
+				</tr>
+				<tr>
+					<td>24</td>
+					<td>Llegada Paciente</td>
+					<td>46.14811</td>
+					<td>0.8900169</td>
+					<td>11.037144</td>
+					<td class='evento'>57.185253</td>
+					<td>0.088543385</td>
+					<td>0.07036498</td>
+					<td class='evento'>46.218475</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>52.421684</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>5</td>
+					<td>13.208631</td>
+					<td>2.641726</td>
+					<td>2</td>
+					<td>5</td>
+					<td>40.0</td>
+					<td>1.447001</td>
+					<td>3.1355586</td>
+					<td>35.989563</td>
+					<td>77.98708</td>
+					<td>24.3936</td>
+					<td>52.85937</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>42.764427</td>
+					<td>10</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>25</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>46.218475</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>57.185253</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>50.839653</td>
+					<td class='evento'>52.421684</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.399124</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>5</td>
+					<td>13.208631</td>
+					<td>2.641726</td>
+					<td>2</td>
+					<td>5</td>
+					<td>40.0</td>
+					<td>1.5173669</td>
+					<td>3.283031</td>
+					<td>36.05993</td>
+					<td>78.0206</td>
+					<td>24.463966</td>
+					<td>52.93114</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>42.764427</td>
+					<td>10</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>46.218475</td>
+
+				</tr>
+				<tr>
+					<td>26</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>50.839653</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>57.185253</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>56.238777</td>
+					<td class='evento'>52.421684</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>5</td>
+					<td>13.208631</td>
+					<td>2.641726</td>
+					<td>3</td>
+					<td>6</td>
+					<td>50.0</td>
+					<td>1.5173669</td>
+					<td>2.984613</td>
+					<td>40.681107</td>
+					<td>80.01846</td>
+					<td>29.085144</td>
+					<td>57.209564</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>6</td>
+					<td>Destruido</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>7</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>42.764427</td>
+					<td>10</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>46.218475</td>
+
+				</tr>
+				<tr>
+					<td>27</td>
+					<td>Fin Atencion Medico 2</td>
+					<td>52.421684</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>57.185253</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>9.998308</td>
+					<td>0.0</td>
+					<td class='evento'>56.238777</td>
+					<td class='evento'>62.41999</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>6</td>
+					<td>22.865887</td>
+					<td>3.810981</td>
+					<td>3</td>
+					<td>7</td>
+					<td>42.857143</td>
+					<td>1.5173669</td>
+					<td>2.8945405</td>
+					<td>42.263138</td>
+					<td>80.62148</td>
+					<td>30.667175</td>
+					<td>58.500935</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>7</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>10</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>46.218475</td>
+
+				</tr>
+				<tr>
+					<td>28</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>56.238777</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>57.185253</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>4.2167187</td>
+					<td>0.0</td>
+					<td class='evento'>60.455498</td>
+					<td class='evento'>62.41999</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>7</td>
+					<td>32.88619</td>
+					<td>4.698027</td>
+					<td>3</td>
+					<td>8</td>
+					<td>37.5</td>
+					<td>1.5173669</td>
+					<td>2.6980796</td>
+					<td>46.08023</td>
+					<td>81.93676</td>
+					<td>34.48427</td>
+					<td>61.3176</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>4</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>10</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>29</td>
+					<td>Llegada Paciente</td>
+					<td>57.185253</td>
+					<td>0.70115155</td>
+					<td>6.0390935</td>
+					<td class='evento'>63.224346</td>
+					<td>0.7027456</td>
+					<td>0.21163149</td>
+					<td class='evento'>57.396885</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>60.455498</td>
+					<td class='evento'>62.41999</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>7</td>
+					<td>32.88619</td>
+					<td>4.698027</td>
+					<td>3</td>
+					<td>8</td>
+					<td>37.5</td>
+					<td>1.5173669</td>
+					<td>2.6534233</td>
+					<td>47.026707</td>
+					<td>82.235725</td>
+					<td>35.430744</td>
+					<td>61.957836</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>10</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>11</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>30</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>57.396885</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>63.224346</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>11.67738</td>
+					<td>3.9</td>
+					<td class='evento'>60.455498</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>7</td>
+					<td>32.88619</td>
+					<td>4.698027</td>
+					<td>3</td>
+					<td>8</td>
+					<td>37.5</td>
+					<td>1.7289987</td>
+					<td>3.0123563</td>
+					<td>47.23834</td>
+					<td>82.30122</td>
+					<td>35.642376</td>
+					<td>62.098103</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>10</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>31</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>60.455498</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>63.224346</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>7</td>
+					<td>32.88619</td>
+					<td>4.698027</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.7289987</td>
+					<td>2.8599527</td>
+					<td>50.29695</td>
+					<td>83.196655</td>
+					<td>38.70099</td>
+					<td>64.01566</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td>10</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>32</td>
+					<td>Llegada Paciente</td>
+					<td>63.224346</td>
+					<td>0.17788236</td>
+					<td>0.979359</td>
+					<td class='evento'>64.203705</td>
+					<td>0.4502982</td>
+					<td>0.15356858</td>
+					<td class='evento'>63.377914</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td class='evento'>72.974266</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Libre</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>7</td>
+					<td>32.88619</td>
+					<td>4.698027</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.7289987</td>
+					<td>2.734704</td>
+					<td>50.29695</td>
+					<td>79.55314</td>
+					<td>41.469837</td>
+					<td>65.59156</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>33</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>63.377914</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>64.203705</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>7.741413</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.8825669</td>
+					<td>2.9703832</td>
+					<td>50.29695</td>
+					<td>79.360374</td>
+					<td>41.623405</td>
+					<td>65.674934</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>34</td>
+					<td>Llegada Paciente</td>
+					<td>64.203705</td>
+					<td>0.29504734</td>
+					<td>1.7481232</td>
+					<td class='evento'>65.95183</td>
+					<td>0.02604764</td>
+					<td>0.055990957</td>
+					<td class='evento'>64.2597</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>0</td>
+					<td>0</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.8825669</td>
+					<td>2.932178</td>
+					<td>51.12274</td>
+					<td>79.62585</td>
+					<td>42.449196</td>
+					<td>66.116425</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>35</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>64.2597</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>65.95183</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.938559</td>
+					<td>3.0167572</td>
+					<td>51.178734</td>
+					<td>79.64359</td>
+					<td>42.505188</td>
+					<td>66.14595</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+
+				</tr>
+				<tr>
+					<td>36</td>
+					<td>Llegada Paciente</td>
+					<td>65.95183</td>
+					<td>0.34601003</td>
+					<td>2.1233163</td>
+					<td class='evento'>68.07514</td>
+					<td>0.33630854</td>
+					<td>0.12735097</td>
+					<td class='evento'>66.07918</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>1</td>
+					<td>1</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>1.938559</td>
+					<td>2.939356</td>
+					<td>52.870865</td>
+					<td>80.16588</td>
+					<td>44.19732</td>
+					<td>67.01454</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>37</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>66.07918</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>68.07514</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>2.065909</td>
+					<td>3.1264145</td>
+					<td>52.998215</td>
+					<td>80.2041</td>
+					<td>44.32467</td>
+					<td>67.07812</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+
+				</tr>
+				<tr>
+					<td>38</td>
+					<td>Llegada Paciente</td>
+					<td>68.07514</td>
+					<td>0.2070145</td>
+					<td>1.1597518</td>
+					<td class='evento'>69.23489</td>
+					<td>0.16401713</td>
+					<td>0.08772394</td>
+					<td class='evento'>68.162865</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>71.11932</td>
+					<td class='evento'>72.974266</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>2.065909</td>
+					<td>3.0347478</td>
+					<td>54.99418</td>
+					<td>80.78452</td>
+					<td>46.320633</td>
+					<td>68.04339</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>39</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>68.162865</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>69.23489</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>12.914524</td>
+					<td>3.9</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>2.1536317</td>
+					<td>3.1595383</td>
+					<td>55.0819</td>
+					<td>80.80925</td>
+					<td>46.408356</td>
+					<td>68.08451</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>40</td>
+					<td>Llegada Paciente</td>
+					<td>69.23489</td>
+					<td>0.7964417</td>
+					<td>7.9590135</td>
+					<td class='evento'>77.19391</td>
+					<td>0.5317637</td>
+					<td>0.17230564</td>
+					<td class='evento'>69.407196</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>72.974266</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>2</td>
+					<td>2</td>
+					<td>2.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>2.1536317</td>
+					<td>3.1106162</td>
+					<td>56.15393</td>
+					<td>81.1064</td>
+					<td>47.480385</td>
+					<td>68.57869</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>41</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>69.407196</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>77.19391</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>72.974266</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>5.0231056</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>3</td>
+					<td>9</td>
+					<td>33.333336</td>
+					<td>2.325934</td>
+					<td>3.3511422</td>
+					<td>56.326233</td>
+					<td>81.153305</td>
+					<td>47.652687</td>
+					<td>68.65669</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+
+				</tr>
+				<tr>
+					<td>42</td>
+					<td>Fin Atencion Medico 2</td>
+					<td>72.974266</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>77.19391</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>77.997375</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>4</td>
+					<td>10</td>
+					<td>40.0</td>
+					<td>2.325934</td>
+					<td>3.1873345</td>
+					<td>59.893303</td>
+					<td>82.074554</td>
+					<td>51.219757</td>
+					<td>70.1888</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>11</td>
+					<td>Destruido</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+
+				</tr>
+				<tr>
+					<td>43</td>
+					<td>Llegada Paciente</td>
+					<td>77.19391</td>
+					<td>0.61535394</td>
+					<td>4.7771583</td>
+					<td class='evento'>81.97107</td>
+					<td>0.07507137</td>
+					<td>0.06726641</td>
+					<td class='evento'>77.26118</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>77.997375</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>4</td>
+					<td>10</td>
+					<td>40.0</td>
+					<td>2.325934</td>
+					<td>3.0131054</td>
+					<td>64.112946</td>
+					<td>83.05441</td>
+					<td>55.4394</td>
+					<td>71.81836</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>44</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>77.26118</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>81.97107</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>10.611988</td>
+					<td>3.9</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>91.77317</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>4</td>
+					<td>10</td>
+					<td>40.0</td>
+					<td>2.3932023</td>
+					<td>3.0975482</td>
+					<td>64.180214</td>
+					<td>83.06916</td>
+					<td>55.506668</td>
+					<td>71.842896</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>Llegada Paciente</td>
+					<td>81.97107</td>
+					<td>0.75193924</td>
+					<td>6.970408</td>
+					<td class='evento'>88.941475</td>
+					<td>0.39028043</td>
+					<td>0.1397645</td>
+					<td class='evento'>82.11083</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>91.77317</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>4</td>
+					<td>10</td>
+					<td>40.0</td>
+					<td>2.3932023</td>
+					<td>2.9195695</td>
+					<td>68.89011</td>
+					<td>84.04198</td>
+					<td>60.21656</td>
+					<td>73.46075</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+				<tr>
+					<td>46</td>
+					<td>Fin Atencion Enfermero</td>
+					<td>82.11083</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>88.941475</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>84.977394</td>
+					<td class='evento'>91.77317</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>2.956459</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>4</td>
+					<td>4</td>
+					<td>4.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>4</td>
+					<td>10</td>
+					<td>40.0</td>
+					<td>2.5329652</td>
+					<td>3.0848124</td>
+					<td>69.02987</td>
+					<td>84.06914</td>
+					<td>60.356323</td>
+					<td>73.50592</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>Interrumpido 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>82.11083</td>
+
+				</tr>
+				<tr>
+					<td>47</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>84.977394</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>88.941475</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>87.93385</td>
+					<td class='evento'>91.77317</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>4</td>
+					<td>4</td>
+					<td>4.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>8</td>
+					<td>32.88619</td>
+					<td>4.1107736</td>
+					<td>5</td>
+					<td>11</td>
+					<td>45.454548</td>
+					<td>2.5329652</td>
+					<td>2.9807518</td>
+					<td>71.89643</td>
+					<td>84.60654</td>
+					<td>63.222885</td>
+					<td>74.39965</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>64.2597</td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td>15</td>
+					<td>Destruido</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>82.11083</td>
+
+				</tr>
+				<tr>
+					<td>48</td>
+					<td>Fin Atencion Medico 1</td>
+					<td>87.93385</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>88.941475</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>0.0</td>
+					<td>13.948057</td>
+					<td>0.0</td>
+					<td class='evento'>101.88191</td>
+					<td class='evento'>91.77317</td>
+					<td>Libre</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>4.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>9</td>
+					<td>56.560345</td>
+					<td>6.284483</td>
+					<td>5</td>
+					<td>12</td>
+					<td>41.666664</td>
+					<td>2.5329652</td>
+					<td>2.8805346</td>
+					<td>74.85289</td>
+					<td>85.124084</td>
+					<td>66.179344</td>
+					<td>75.26037</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>12</td>
+					<td>Destruido</td>
+					<td>Comun</td>
+					<td></td>
+					<td>13</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>82.11083</td>
+
+				</tr>
+				<tr>
+					<td>49</td>
+					<td>Llegada Paciente</td>
+					<td>88.941475</td>
+					<td>0.3577169</td>
+					<td>2.2136307</td>
+					<td class='evento'>91.155106</td>
+					<td>0.01823667</td>
+					<td>0.054194435</td>
+					<td class='evento'>88.99567</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td class='evento'>101.88191</td>
+					<td class='evento'>91.77317</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>4.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>9</td>
+					<td>56.560345</td>
+					<td>6.284483</td>
+					<td>5</td>
+					<td>12</td>
+					<td>41.666664</td>
+					<td>2.5329652</td>
+					<td>2.8479009</td>
+					<td>75.86051</td>
+					<td>85.29262</td>
+					<td>67.186966</td>
+					<td>75.54065</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>13</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>82.11083</td>
+					<td>19</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+			<tfoot>
+				<tr>
+					<td>49</td>
+					<td>Llegada Paciente</td>
+					<td>88.941475</td>
+					<td>0.3577169</td>
+					<td>2.2136307</td>
+					<td>91.155106</td>
+					<td>0.01823667</td>
+					<td>0.054194435</td>
+					<td>88.99567</td>
+					<td>0.0</td>
+					<td>0.0</td>
+					<td>101.88191</td>
+					<td>91.77317</td>
+					<td>Ocupado</td>
+					<td>0</td>
+					<td>Atendiendo Comun</td>
+					<td>0.0</td>
+					<td>Atendiendo Urgencia</td>
+					<td>0.7361984</td>
+					<td>0</td>
+					<td>3</td>
+					<td>3</td>
+					<td>4.0</td>
+					<td>0.0</td>
+					<td>3.1339722</td>
+					<td>9</td>
+					<td>56.560345</td>
+					<td>6.284483</td>
+					<td>5</td>
+					<td>12</td>
+					<td>41.666664</td>
+					<td>2.5329652</td>
+					<td>2.8479009</td>
+					<td>75.86051</td>
+					<td>85.29262</td>
+					<td>67.186966</td>
+					<td>75.54065</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>9</td>
+					<td>Interrumpido 2</td>
+					<td>Comun</td>
+					<td></td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>13</td>
+					<td>En Primeros Auxilios 1</td>
+					<td>Comun</td>
+					<td></td>
+					<td>14</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>66.07918</td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td> </td>
+					<td>16</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>69.407196</td>
+					<td>17</td>
+					<td>En Primeros Auxilios 2</td>
+					<td>Urgente</td>
+					<td></td>
+					<td>18</td>
+					<td>Esperando Primeros Auxilios</td>
+					<td>Comun</td>
+					<td>82.11083</td>
+					<td>19</td>
+					<td>En Enfermeria</td>
+					<td></td>
+					<td></td>
+
+				</tr>
+			</tfoot>

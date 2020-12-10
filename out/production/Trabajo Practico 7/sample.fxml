@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="231.0" prefWidth="392.0" GridPane.rowIndex="1">
+            <children>
+                <Button fx:id="btn_generar" layoutX="257.0" layoutY="185.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" text="Generar" />
+                <TextField fx:id="txt_cantSim" layoutX="195.0" layoutY="61.0" prefHeight="25.0" prefWidth="164.0" />
+                <Label layoutX="34.0" layoutY="65.0" prefHeight="17.0" prefWidth="138.0" text="Cantidad de simulaciones" />
+                <Label layoutX="34.0" layoutY="104.0" prefHeight="17.0" prefWidth="131.0" text="Desde" />
+                <Label layoutX="34.0" layoutY="141.0" prefHeight="17.0" prefWidth="109.0" text="Hasta" />
+                <TextField fx:id="txt_desde" layoutX="195.0" layoutY="100.0" prefHeight="25.0" prefWidth="164.0" />
+                <TextField fx:id="txt_hasta" layoutX="195.0" layoutY="137.0" prefHeight="25.0" prefWidth="164.0" />
+                <Label layoutX="27.0" text="Sala de Urgencias">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="310.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@stethoscope.png" />
+               </image>
+            </ImageView>
+                <Separator layoutX="2.0" layoutY="42.0" prefHeight="0.0" prefWidth="390.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>
